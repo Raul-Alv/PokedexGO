@@ -1,0 +1,107 @@
+<pokedex>
+    <pokemon number="1">
+        <nombre>Bulbasur</nombre>
+        <tipo1>Planta</tipo1>
+        <tipo2>Ninguno</tipo2>
+        <localizacion>Global</localizacion>
+        <generacion>1</generacion>
+        <pokemon number="2">
+            <nombre>Ivysaur</nombre>
+            <tipo1>Planta</tipo1>
+            <tipo2>Veneno</tipo2>
+            <localizacion>Global</localizacion>
+            <generacion>1</generacion>
+            <pokemon number="3">
+                <nombre>Venausaur</nombre>
+                <tipo1>Planta</tipo1>
+                <tipo2>Veneno</tipo2>
+                <localizacion>Global</localizacion>
+                <generacion>1</generacion>
+            </pokemon>
+        </pokemon>
+    </pokemon>
+    <pokemon number="4">
+        <nombre>Charmander</nombre>
+        <tipo1>Fuego</tipo1>
+        <tipo2>Ninguno</tipo2>
+        <localizacion>Global</localizacion>
+        <generacion>1</generacion>
+        <pokemon number="5">
+            <nombre>Charmeleon</nombre>
+            <tipo1>Fuego</tipo1>
+            <tipo2>Ninguno</tipo2>
+            <localizacion>Global</localizacion>
+            <generacion>1</generacion>
+            <pokemon number="6">
+                <nombre>Charizard</nombre>
+                <tipo1>Fuego</tipo1>
+                <tipo2>Volador</tipo2>
+                <localizacion>Global</localizacion>
+                <generacion>1</generacion>
+            </pokemon>
+        </pokemon>
+    </pokemon>
+    <pokemon number="7">
+        <nombre>Squirtle</nombre>
+        <tipo1>Agua</tipo1>
+        <tipo2>Ninguno</tipo2>
+        <localizacion>Global</localizacion>
+        <generacion>1</generacion>
+        <pokemon number="8">
+            <nombre>Wartortle</nombre>
+            <tipo1>Agua</tipo1>
+            <tipo2>Ninguno</tipo2>
+            <localizacion>Global</localizacion>
+            <generacion>1</generacion>
+            <pokemon number="9">
+                <nombre>Blastoise</nombre>
+                <tipo1>Agua</tipo1>
+                <tipo2>Ninguno</tipo2>
+                <localizacion>Global</localizacion>
+                <generacion>1</generacion>
+            </pokemon>
+        </pokemon>
+    </pokemon>
+    <pokemon number="439">
+        <nombre>Mime Jr.</nombre>
+        <tipo1>Psíquico</tipo1>
+        <tipo2>Hada</tipo2>
+        <localizacion>Europa</localizacion>
+        <generacion>4</generacion>
+        <pokemon number="122">
+            <nombre>Mr. Mime</nombre>
+            <tipo1>Psíquico</tipo1>
+            <tipo2>Hada</tipo2>
+            <localizacion>Europa</localizacion>
+            <generacion>1</generacion>
+        </pokemon>
+    </pokemon>
+    <pokemon number="128">
+        <nombre>Tauros</nombre>
+        <tipo1>Normal</tipo1>
+        <tipo2>Ninguno</tipo2>
+        <localizacion>América del Norte</localizacion>
+        <generacion>1</generacion>
+    </pokemon>
+    <pokemon number="480">
+        <nombre>Uxie</nombre>
+        <tipo1>Psíquico</tipo1>
+        <tipo2>Ninguno</tipo2>
+        <localizacion>Asia, Pacífico</localizacion>
+        <generacion>4</generacion>
+    </pokemon>
+    <pokemon number="481">
+        <nombre>Mesprit</nombre>
+        <tipo1>Psíquico</tipo1>
+        <tipo2>Ninguno</tipo2>
+        <localizacion>Europa, Africa, India</localizacion>
+        <generacion>4</generacion>
+    </pokemon>
+    <pokemon number="482">
+        <nombre>Azelf</nombre>
+        <tipo1>Psíquico</tipo1>
+        <tipo2>Ninguno</tipo2>
+        <localizacion>Americas</localizacion>
+        <generacion>4</generacion>
+    </pokemon>
+</pokedex>
