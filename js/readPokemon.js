@@ -10,7 +10,7 @@ class ReadXML{
         var doc;
         if(typeof window.DOMParser != "undefined") {
             this.xmlhttp=new XMLHttpRequest();
-            this.xmlhttp.open("GET",'./pokedex.xml',true);
+            this.xmlhttp.open("GET",'/xml/pokedex.xml',true);
             this.xmlhttp.onload = function(){
                 this.xmlDoc = this.responseXML;
             }
@@ -36,7 +36,7 @@ class ReadXML{
     }
 
     showAlgo(){
-        $.get('pokedex.xml', function(data){
+        $.get('/xml/pokedex.xml', function(data){
             document.getElementById("texto").innerText = this.xmlDoc.getElementById("nombre");
         })
         
@@ -44,4 +44,4 @@ class ReadXML{
 }
 
 var reader = new ReadXML();
-var a = reader.readFile("pokedex.xml");
+var a = reader.readFile("/xml/pokedex.xml");
