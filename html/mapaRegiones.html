@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta chatset="UTF-8">
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+        <script src="../js/map.js"></script>
+
+    </head>
+    <body>
+        <h1>Mapa de Pokémon regionales</h1>
+        <p>Algunos de los Pokémon encontrados en Pokémon GO sólo pueden ser encontrados en ciertas partes del globo. Estas zonas están divididas en fiferentes categorías, como hemisferios y continentes enteros, o regiones particulares como por ejemplo la cosa de los países entre los trópicos.</p>
+        <p>A continuación, se muestra un mapa del mundo con las zonas en las que se encuentran los Pokémon.</p>
+
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapa.mapaDinamico()"></script>
+        <aside id="mapa"></aside>
+    </body>
+</html>
