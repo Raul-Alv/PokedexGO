@@ -40,7 +40,7 @@
 
         public function register(){
 
-            $name = stripslashes($_REQUEST['nombre']);
+            $name = stripslashes($_REQUEST['name']);
             $name = mysqli_real_escape_string($this->con, $name);
 
             $username = stripslashes($_REQUEST['username']);
@@ -49,15 +49,32 @@
             $email = stripslashes($_REQUEST['email']);
             $email = mysqli_real_escape_string($this->con, $email);
 
-            $password = stripslashes($_REQUEST['pssword']);
+            $password = stripslashes($_REQUEST['password']);
             $password = mysqli_real_escape_string($this->con, $password);
-            
-            $query = "INSERT INTO Usuarios (username, nombre, email, pssword) values (username='$username', nombre='$name', email='$email', pssword='$password')";
-            $result = mysqli_query($this->con, $query);
-            
-            if($result) {
-                echo '<p>Sesion registrada</p>';
+
+            $passwordR = stripslashes($_REQUEST['passwordRepetir']);
+            $passwordR = mysqli_real_escape_string($this->con, $passwordR);
+
+            $queryEmail = $this->con->query("SELECT * FROM usuarios WHERE email='$email'");
+            $queryUsern = $this->con->query("SELECT * FROM usuarios WHERE username='$username'");
+
+            if(mysqli_num_rows($queryEmail) < 1 && mysqli_num_rows($queryUsern) < 1){
+                if($password === $passwordR && !empty($name) && !empty($username)
+                && !empty($email) && !empty($passwordR) && !empty($passwordR)){
+                    $query = "INSERT INTO Usuarios (username, nombre, email, pssword) values ('$username', '$name', '$email', '$password')";
+                    $result = mysqli_query($this->con, $query);
+                    
+                    if($result) {
+                        echo '<p>Sesion registrada</p>';
+                    }
+                }
             }
+
+            
+            
+            
+            
+            
         }
     }
 ?>
