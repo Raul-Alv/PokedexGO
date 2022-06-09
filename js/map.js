@@ -1,20 +1,16 @@
+
 class Map{
     constructor(){
-        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.verErrores.bind(this));
+        
     }
 
     mapaDinamico(){       
-        mapboxgl.accessToken = this.apiKey;
-        let map = new mapboxgl.Map({
-          container: this.container,
-          style: this.mapStyle,
-          center: this.oviedo,
-          zoom: this.zoom
-        });
-        let marker1 = new mapboxgl.Marker()
-            .setLngLat(this.oviedo)
-            .addTo(map);
+        var middle = {lat: 0, lng: 0};
+        var mapaOviedo = new google.maps.Map(document.getElementById('mapa'),{zoom: 1,center:middle});
+        var marcador = new google.maps.Marker({position:oviedo,map:mapaOviedo});
+        
     }     
 }
 
 var mapa=new Map();
+mapa.mapaDinamico() = mapaDinamico();
