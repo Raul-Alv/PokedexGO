@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
+        <title>Inicio de sesión</title>
     </head>
     <body>
         <?php
@@ -35,7 +36,7 @@
                     echo "<p>Empieza el login</p>";
                     $session->login();
                     echo '<script src="../js/forms.js"></script>';
-                    header("Location: listPokemon.html");
+                    header("Location: listPokemon.php");
                 }
             }
         ?>

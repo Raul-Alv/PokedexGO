@@ -2,10 +2,12 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Pokédex GO</title>
+        <title>Pokédex</title>
+        <script src="../js/readPokemon.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
-        <h1>Pokédex GO</h1>
+        <h1>Pokédex</h1>
         <nav>
             <a href="/html/index.html" accesskey="I" tabindex=0>Inicio</a>
             <a href="/html/tablaDeTipos.html" accesskey="T" tabindex=0>Tabla de tipos</a>
@@ -14,11 +16,7 @@
             <a href="/html/registro.php" accesskey="R" tabindex=0>Registrarse</a>
             
          </nav>
-        <p>¡Bienvenido a Pokédex GO! En esta página podrás ver los pokémon que la aplicación de Pokémon GO.</p>
-        <p></p>
-        <h2>¿Qué es Pokémon GO?</h2>
-        <p>Pokémon GO es una aplicación móvil de Niantic que permite explorar y cazar pokémon que se encuentran en tu zona.</p>
-
-        
+        <button onclick ="reader.showAlgo()">Mostrar</button>
+        <pre id="texto"></pre>
     </body>
 </html>

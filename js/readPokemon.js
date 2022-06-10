@@ -1,12 +1,15 @@
 class ReadXML{
     constructor(){
         var parser = new DOMParser();
+        var doc;
         var stringDatos;
         var xmlhttp;
         var xmlDoc;
     }
 
     readFile(xmlFile){
+        doc = parser.parseFromString("../xml/pokedex.xml", "application/xml");
+        /*
         var doc;
         if(typeof window.DOMParser != "undefined") {
             this.xmlhttp=new XMLHttpRequest();
@@ -24,6 +27,7 @@ class ReadXML{
             this.xmlDoc.async="false";
             this.xmlDoc.load(xmlFile);
         }
+        */
     }
 
     crearElemento(tipoElemento, texto, insertarAntesDe){
@@ -36,8 +40,8 @@ class ReadXML{
     }
 
     showAlgo(){
-        $.get('/xml/pokedex.xml', function(data){
-            document.getElementById("texto").innerText = this.xmlDoc.getElementById("nombre");
+        $.get('../xml/pokedex.xml', function(data){
+            document.getElementById("texto").innerText = this.xmlDoc.ReadXML;
         })
         
     }
