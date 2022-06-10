@@ -8,7 +8,7 @@
         
         <?php
             require("../php/database.php");
-            include("../php/authSesion.php")
+            //include("../php/authSesion.php")
         ?>
         <h1>Registro</h1>
         <nav>
@@ -27,7 +27,7 @@
             <input type="password" name="password" placeholder="Contraseña"><br>
             <input type="password" name="passwordRepetir" placeholder="Repetir contraseña"><br>
 
-            <input name="enviar" type="submit" value="Enviar"><br>
+            <input name="registro" type="submit" value="Enviar"><br>
         </form>
         
         <?php
@@ -35,12 +35,13 @@
             $session = new ConnectToSession();
             
             if (count($_POST) > 0){
-                $value = $_POST['enviar'];
+                $value = $_POST['registro'];
                 echo "<p>.$value.</p>";
-                if(isset($_POST['enviar'])){
+                if(isset($_POST['registro'])){
                     echo "<p>Empieza el registro</p>";
                     $session->register();
                     echo '<script src="../js/forms.js"></script>';
+                    header("Location: login.php");
                 }
             }
         ?>

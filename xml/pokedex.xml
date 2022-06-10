@@ -62,6 +62,13 @@
             </pokemon>
         </pokemon>
     </pokemon>
+    <pokemon number="214">
+        <nombre>Heracross</nombre>
+        <tipo1>Bicho</tipo1>
+        <tipo2>Lucha</tipo2>
+        <localizacion>América del Sur</localizacion>
+        <generacion>2</generacion>
+    </pokemon>
     <pokemon number="439">
         <nombre>Mime Jr.</nombre>
         <tipo1>Psíquico</tipo1>

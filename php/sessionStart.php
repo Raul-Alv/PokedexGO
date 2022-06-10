@@ -31,7 +31,9 @@
                     $result = mysqli_query($this->con, $query);
                     $rows = mysqli_num_rows($result);
                     if($rows == 1){
+                        session_start();
                         $_SESSION['username'] = $email;
+                        
                     }
                 }
                 
@@ -65,7 +67,7 @@
                     $result = mysqli_query($this->con, $query);
                     
                     if($result) {
-                        echo '<p>Sesion registrada</p>';
+                        header("Location: listPokemon.php");
                     }
                 }
             }
